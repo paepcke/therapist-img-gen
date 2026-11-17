@@ -4,12 +4,12 @@
 # @Date:   2026-11-16 19:55:34
 # @File:   /Users/paepcke/VSCodeWorkspaces/therapist-img-gen/src/manual_corrections/generate_driving_candidates.py
 # @Last Modified by:   Andreas Paepcke
-# @Last Modified time: 2026-11-16 20:09:41
+# @Last Modified time: 2026-11-17 10:29:00
 # **********************************************************
 
 '''
-Makes candidate LivePortrait *driving* photos for Anger, Anxiety and
-Sadness, from Jon's Nov 13 2026 review: the current driving photos make
+Makes candidate LivePortrait *driving* photos for Anger, Anxiety, Sadness
+and Fear, from Jon's Nov 13 2026 review: the current driving photos make
 Anger look away/up, Anxiety look angry, and Sadness look like affect
 suppression. Each candidate is a GPT Image edit of one NEUTRAL reference
 photo (assets/clientInTherapyOfficeIsolated.png), changing only the
@@ -87,6 +87,24 @@ CANDIDATES = {
         'd': ("about to cry. Eyes cast down and wet, eyebrows raised in the "
               "middle, a slightly open mouth with the chin starting to "
               "crumple. The lips are not pressed together."),
+        },
+    'Fear': {
+        'a': ("acute fear, clearly NOT surprise and NOT anger. The eyebrows are "
+              "raised and drawn together, the upper eyelids lifted so the "
+              "whites show above the iris, the eyes wide, the mouth slightly "
+              "open with the lips stretched horizontally back, and the lower "
+              "face tense."),
+        'b': ("terror. Eyes very wide with whites showing, brows raised and "
+              "pulled together in a flat, tense line, the mouth open a little "
+              "with the lips pulled back and the lower lip tense, the chin "
+              "drawn back slightly."),
+        'c': ("frightened and frozen. Wide eyes, brows raised and drawn "
+              "together, the lips parted and stretched sideways, a tense "
+              "bracing look, as if something threatening is approaching. Not a "
+              "surprised look."),
+        'd': ("fear held in. Wide eyes with whites showing, brows raised and "
+              "knit, the mouth closed but the lips stretched thin and pulled "
+              "back sideways, the chin tense and drawn back, the face rigid."),
         },
     }
 
